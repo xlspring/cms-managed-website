@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Company Name</title>
+
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <h2>
+            taggr
+        </h2>
+    </div>
+    <nav>
+        <a href="#blog-slide"><li class="marked-nav">BLOG</li></a>
+        <a href="#contacts-slide"><li>CONTACT US</li></a>
+    </nav>
+</header>
+<div id="loading">
+    <img src="./assets/spinner.svg" alt="Loader">
+</div>
+<div id="fullpage">
+    <div class="section" data-anchor="landing-slide" id="landing">
+        <main class="first-section">
+            <section class="main-section">
+                <h1>
+                    Raise your profits <br>
+                    Fastly
+                </h1>
+                <p>
+                    Take your part
+                    Lorem ipsum
+                    Dolor amet
+                </p>
+            </section>
+            <a href="#contacts-slide">
+                <button onclick="">GET IN TOUCH</button>
+            </a>
+        </main>
+    </div>
+    <div class="section second-section" data-anchor="perks-slide" id="perks">
+        <h1 class="section-header">
+            WHY CHOOSE US?
+        </h1>
+        <main>
+            <div class="card-container">
+                <div class="card">
+                    <div class="icon-container">
+                        <span class="material-icons">
+                            speedometer
+                        </span>
+                    </div>
+                    <h2>
+                        SPEED
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed varius felis. Integer eget est
+                        sollicitudin, vehicula lacus non, condimentum est.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="icon-container">
+                        <span class="material-icons">
+                            groups
+                        </span>
+                    </div>
+                    <h2>
+                        OPEN SOURCE
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed varius felis. Integer eget est
+                        sollicitudin, vehicula lacus non, condimentum est.
+                    </p>
+                </div>
+                <div class="card">
+                    <div class="icon-container">
+                        <span class="material-icons">
+                            attach_money
+                        </span>
+                    </div>
+                    <h2>
+                        PRICE
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed varius felis. Integer eget est
+                        sollicitudin, vehicula lacus non, condimentum est.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="section" data-anchor="blog-slide" id="blog">
+        <main class="third-section">
+            <h2 class="blog-header">
+                BLOG
+            </h2>
+            <div class="posts-container">
+                <div class="post">
+                    <div class="post-header">
+                        <h2>An interesting title</h2>
+                        <p>Vitalii Tsoma * 5 min</p>
+                    </div>
+                    <img src="./assets/landing-bg.png">
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h2>An interesting title</h2>
+                        <p>Vitalii Tsoma * 5 min</p>
+                    </div>
+                    <img src="./assets/landing-bg.png">
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h2>An interesting title</h2>
+                        <p>Vitalii Tsoma * 5 min</p>
+                    </div>
+                    <img src="./assets/landing-bg.png">
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h2>An interesting title</h2>
+                        <p>Vitalii Tsoma * 5 min</p>
+                    </div>
+                    <img src="./assets/landing-bg.png">
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <h2>An interesting title</h2>
+                        <p>Vitalii Tsoma * 5 min</p>
+                    </div>
+                    <img src="./assets/landing-bg.png">
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="section" data-anchor="contacts-slide" id="contacts">
+        <h2 class="section-header white-section-header">CONTACT US</h2>
+        <div class="contacts-wrapper">
+            <div class="contact-card">
+                <iframe frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Cherkasy+State+Business+College,+Viacheslava+Chornovola+Street,+Cherkasy,+Cherkasy+Oblast,+Ukraine&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                        style="height:100%;width:100%;border:0;"></iframe>
+            </div>
+            <div class="contact-card">
+                <div class="contact-entry">
+                    <span class="material-icons">
+                        email
+                    </span>
+                    <span>
+                        info@company.name
+                    </span>
+                </div>
+                <div class="contact-entry">
+                    <span class="material-icons">
+                        telegram
+                    </span>
+                    <span>
+                        @company_bot
+                    </span>
+                </div>
+                <div class="contact-entry">
+                    <span class="material-icons">
+                        instagram
+                    </span>
+                    <span>
+                        @company
+                    </span>
+                </div>
+            </div>
+            <div class="contact-card">
+                <form>
+                    <input name="name" type="text" placeholder="Your name..." id="name">
+                    <input type="email" name="email" placeholder="Your email..." id="email">
+                    <textarea type="text" name="query" placeholder="Your question..." id="query"></textarea>
+                    <button>SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script crossorigin="anonymous"
+        integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA=="
+        referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha512-VtOcayHH4bfSUajzLiExkPE2HZipNXtYize8nIhFbasshi9c5AbtjSWDHYO+U2yhFyqcIGp+nXGX5rau1Iz6cQ=="
+        referrerpolicy="no-referrer" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.extensions.min.js"></script>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p,
+span {
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.material-icons {
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#loading {
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 100;
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+
+    transition: all .3s ease-in;
+}
+
+header {
+    width: 100vw;
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 99;
+    background: #fff;
+}
+
+header * {
+    width: 185px;
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 370px;
+}
+
+nav li {
+    list-style: none;
+
+    height: 80px;
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #FA9926;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.marked-nav{
+    background-color: #F15729;
+}
+
+.section .first-section {
+    width: 100vw;
+    height: 860px;
+
+    background: black url('./assets/landing-bg.png') no-repeat center;
+    background-size: cover;
+
+    position: relative;
+
+    color: white;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+
+    position: relative;
+}
+
+.first-section .main-section {
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+
+    position: absolute;
+    top: 305px;
+    left: 100px;
+}
+
+.main-section h1:before {
+    content: "";
+    background: #F15729;
+    width: 180px;
+    height: 24px;
+
+    position: absolute;
+    top: -35px;
+}
+
+.main-section p {
+    margin-top: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+
+    max-width: 150px;
+}
+
+.first-section button {
+    width: 420px;
+    height: 80px;
+
+    color: white;
+    background: #F15729;
+    border: none;
+
+    cursor: pointer;
+
+    font-size: 24px;
+    font-weight: 700;
+
+    position: absolute;
+
+    bottom: -40px;
+    left: 110px;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.section-header {
+    width: 100vw;
+    text-align: center;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+
+    position: relative;
+}
+
+.section-header:after {
+    content: "";
+
+    background-color: #F15729;
+
+    height: 12px;
+    width: 180px;
+
+    position: absolute;
+
+    bottom: -25px;
+    left: calc(50% - 90px);
+}
+
+.white-section-header {
+    color: white;
+
+    margin-top: 80px;
+}
+
+.white-section-header:after {
+    content: none;
+}
+
+.card {
+    width: 440px;
+    height: 520px;
+
+    background: linear-gradient(40deg, hsla(30, 22%, 96%, 1) 0%, hsla(15, 100%, 91%, 1) 100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 35px;
+
+    transition: all .5s ease-in-out;
+}
+
+.card:hover {
+    scale: 1.10;
+}
+
+.card .icon-container {
+    width: 100px;
+    height: 100px;
+
+    background-color: #F15729;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card p {
+    margin: 0px 42px 0px 42px;
+}
+
+.card h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.card-container {
+
+    display: flex;
+    flex-direction: row;
+
+    gap: 125px;
+}
+
+.card-container .icon-container span {
+    font-size: 86px;
+    color: white;
+
+    width: 86px;
+}
+
+.blog-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+
+    transform: rotate(270deg);
+
+    position: relative;
+    width: fit-content;
+
+    margin-bottom: 100px;
+}
+
+.blog-header:after {
+    content: "";
+    background-color: #F15729;
+    width: 90px;
+    height: 24px;
+    transform: rotate(90deg);
+
+    bottom: -27px;
+    top: 25px;
+
+    position: absolute;
+}
+
+.posts-container {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+
+    gap: 15px;
+
+    overflow-y: scroll;
+}
+
+.third-section {
+    display: flex;
+    flex-direction: row;
+
+    align-items: end;
+}
+
+.post {
+    width: 1000px;
+    height: 750px;
+
+    min-width: 1000px;
+    min-height: 750px;
+
+    flex: 1;
+
+    margin-bottom: 70px;
+
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.post-extended {
+    width: fit-content;
+}
+
+.post-header h2 {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.post-header p {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#contacts {
+    background-color: #F15729;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.contacts-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-card {
+    background-color: white;
+
+    width: 560px;
+    height: 680px;
+}
+
+.contact-card form {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    height: calc(100% - 20px);
+}
+
+.contact-card form * {
+    flex: 1;
+
+    background-color: #d9d9d9;
+    border: none;
+
+    padding: 3px 3px 3px 10px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+
+    user-focus: #F15729;
+}
+
+.contact-card form *:focus {
+    outline-color: #FA9926;
+}
+
+.contact-card form button {
+    background-color: #F15729;
+    font-weight: 700;
+    color: white;
+}
+
+.contact-card form #query {
+    flex: 8;
+    resize: none;
+
+    padding: 10px;
+}
+
+.contact-entry {
+    display: flex;
+    height: 80px;
+
+    align-items: center;
+    gap: 20px;
+
+    margin-left: 20px;
+}
+
+.contact-entry:first-of-type {
+    margin-top: 20px;
+}
+
+.contact-entry .material-icons {
+    font-size: 64px;
+
+    width: 70px;
+    height: 70px;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-entry span {
+    font-size: 32px;
+}
+
+.fp-watermark {
+    display: none;
+}
+
+.post img {
+    width: 100%;
+}
+
+h1 .marked {
+    color: #F15729;
+}
